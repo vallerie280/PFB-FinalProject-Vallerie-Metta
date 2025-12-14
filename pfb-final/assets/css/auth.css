@@ -1,0 +1,108 @@
+.auth-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--navy);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+}
+
+.auth-card h2 {
+    color: var(--accent-blue);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group select { 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 4px;
+    background-color: var(--darker-navy);
+    color: var(--text-light);
+    box-sizing: border-box; 
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+}
+.form-group input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.btn-register, .btn-login {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: var(--accent-blue);
+    color: var(--dark-blue); 
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-register:hover, .btn-login:hover {
+    background-color: #3fceff;
+}
+
+.auth-link-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-link-footer a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.auth-link-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error-red {
+    background-color: var(--error-red);
+    color: var(--text-light);
+}
+
+.success-green {
+    background-color: var(--success-green);
+    color: var(--dark-blue);
+    font-weight: bold;
+}
