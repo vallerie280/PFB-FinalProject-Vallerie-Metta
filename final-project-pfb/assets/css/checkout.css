@@ -1,0 +1,136 @@
+.checkout-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--navy);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+}
+
+.checkout-container h1 {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+    border-bottom: 2px solid var(--dark-blue);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.checkout-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 30px;
+}
+
+.card-box {
+    background-color: var(--dark-blue);
+    padding: 25px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.card-box h2 {
+    color: var(--yellow-gold);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--darker-navy);
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--darker-navy);
+    border-radius: 4px;
+    background-color: var(--darker-navy);
+    color: var(--text-light);
+    box-sizing: border-box; 
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.summary-table th, .summary-table td {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid var(--darker-navy);
+}
+
+.summary-table th {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.summary-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding-top: 15px;
+    border-top: 2px solid var(--darker-navy);
+    margin-top: 10px;
+}
+
+.total-amount {
+    font-weight: bold;
+    color: var(--success-green);
+}
+
+.btn-place-order {
+    width: 100%;
+    background-color: var(--success-green);
+    color: var(--navy);
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-place-order:hover {
+    background-color: #38c156;
+}
+
+.btn-return-cart {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-return-cart:hover {
+    background-color: rgba(0, 188, 212, 0.1);
+}
+
+@media (max-width: 900px) {
+    .checkout-details-grid {
+        grid-template-columns: 1fr;
+    }
+}

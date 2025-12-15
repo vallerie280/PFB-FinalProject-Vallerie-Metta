@@ -1,0 +1,130 @@
+.confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--navy);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.confirmation-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--success-green);
+    margin-bottom: 10px;
+}
+
+.confirmation-header h1 {
+    font-size: 2.8rem;
+    color: var(--success-green);
+    margin-bottom: 10px;
+}
+
+.transaction-id {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.confirmation-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.summary-box, .customer-box {
+    background-color: var(--darker-navy);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.summary-box h2, .customer-box h2, .product-details-box h2 {
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+}
+
+.summary-box p, .customer-box p {
+    margin-bottom: 10px;
+}
+
+.total-amount {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--yellow-gold);
+}
+
+.status-tag {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+.status-pending {
+    background-color: var(--yellow-gold);
+    color: var(--dark-blue);
+}
+
+.product-details-box {
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--darker-navy);
+    border-radius: 8px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.items-table th, .items-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.items-table th {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.items-table td:last-child {
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.confirmation-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: var(--dark-blue);
+    color: var(--text-light);
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #354966;
+}

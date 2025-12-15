@@ -1,0 +1,135 @@
+.history-title {
+    font-size: 3rem;
+    color: var(--text-light);
+    text-align: center;
+    padding: 40px 0 20px;
+    margin-bottom: 30px;
+}
+
+.empty-history {
+    text-align: center;
+    padding: 50px;
+    border: 1px dashed var(--text-muted);
+    border-radius: 8px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.empty-history p {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.history-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.transaction-card {
+    background-color: var(--navy);
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darker-navy);
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--dark-blue);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.order-id {
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.order-status {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-completed {
+    background-color: var(--success-green);
+    color: var(--dark-blue);
+}
+
+.status-pending {
+    background-color: var(--yellow-gold);
+    color: var(--dark-blue);
+}
+
+.status-cancelled {
+    background-color: var(--error-red);
+    color: var(--text-light);
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.item-detail {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--dark-blue);
+}
+
+.item-detail:last-child {
+    border-bottom: none;
+}
+
+.item-detail img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.item-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.item-qty {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.item-subtotal {
+    font-weight: bold;
+    color: var(--yellow-gold);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--darker-navy);
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.total-label {
+    margin-right: 15px;
+    color: var(--text-light);
+}
+
+.total-amount {
+    color: var(--yellow-gold);
+}
